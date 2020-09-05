@@ -1,6 +1,6 @@
 <template>
-  <div id="meet">
-    <img alt="Beto" src="./assets/beto.png">
+  <div id="app">
+    <!-- <img alt="Beto" src="./assets/beto.png"> -->
     <Meet msg="Esse é o meet escrito no app.vue"/>
   </div>
 </template>
@@ -9,9 +9,9 @@
 import Meet from './components/Meet.vue'
 
 export default {
-  name: 'Meet',
+  name: 'App',
   components: {
-    HelloWorld
+    Meet
   }
 }
 </script>
