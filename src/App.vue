@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
+  <div id="meet">
     <img alt="Beto" src="./assets/beto.png">
-    <HelloWorld msg="Welcome to BetoVue.js App"/>
+    <Meet msg="Esse é o meet escrito no app.vue"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Meet from './components/Meet.vue'
 
 export default {
-  name: 'App',
+  name: 'Meet',
   components: {
     HelloWorld
   }
