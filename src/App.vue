@@ -2,10 +2,7 @@
   <div id="app">
     <!-- <img alt="Beto" src="./assets/beto.png"> -->
     <Meet/>
-    <div id="box"></div>
-    <!-- <div>
-      <button @click="jitsi()">cria o meet</button>
-    </div> -->
+    <div id="box" style="display: none"></div>
   </div>
 </template>
 
@@ -33,17 +30,17 @@ export default {
   top:0;
 }
 #box {
- /* background-color:rgba(22,38,55,.8); */
- background-color:rgba(183, 212, 19, 1.0);
+ background-color:rgba(22,38,55,1.0);
+ /* background-color:rgba(183, 212, 19, 1.0); */
  box-sizing:border-box;
  color:#fff;
- /* display:flex; */
  flex-direction:column;
  height:100%;
  overflow:hidden;
  position:absolute;
  top:0;
  width:375px;
- /* z-index:300 */
+ /* display: none;  used inline because*/
+ z-index:100
 }
 </style>
