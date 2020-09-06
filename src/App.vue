@@ -1,17 +1,20 @@
 <template>
-  <div id="meet">
+  <div id="app">
     <img alt="Beto" src="./assets/beto.png">
-    <Meet msg="Esse é o meet escrito no app.vue"/>
+    <HelloWorld/>
+    <Chat/>
   </div>
 </template>
 
 <script>
-import Meet from './components/Meet.vue'
+import HelloWorld from './components/HelloWorld.vue'
+import Chat from './components/Chat.vue'
 
 export default {
-  name: 'Meet',
+  name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    Chat
   }
 }
 </script>
