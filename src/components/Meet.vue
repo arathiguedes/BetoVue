@@ -1,7 +1,6 @@
 <template>
   <div class="app">
-  <div id="meet"></div>
-  <!-- <button @click="jitsi()">cria o meet</button> -->
+  <div id="meet" style="height: 100vh"></div>
   </div>
 </template>
 
@@ -14,9 +13,9 @@ export default {
         mounted(){
         let domain = 'meet.jit.si';
         let options = {
-            roomName: 'testroom',
-            // width: 500,
-            height: 500,
+            roomName: 'nomedaassembleia', // todo implementar forma de mudar o nome da assembleia
+            width: '100%',
+            height: '100%',
             interfaceConfigOverwrite: { filmStripOnly: false},
             parentNode: document.querySelector('#meet')
         };
