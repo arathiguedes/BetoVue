@@ -19,10 +19,10 @@
 
             <div id="forms">
 
-            <h3>Cadastre sua Palta</h3>
+            <h3 style="color: #ffffff">Cadastre sua Pauta</h3>
             <input type="text" placeholder="Tema" v-model="TemaField" > 
             <input type="text" placeholder="Descricao" v-model="DescField">
-            <label for="pauta">Estado da pauta:</label>
+            <label for="pauta" style="color: #ffffff"> Estado da pauta:</label>
             <select id="pauta" name="estado" v-model="estado">
                 <option value="green">discutida</option>
                 <option value="red">discutindo</option>
@@ -39,7 +39,7 @@
 <style scoped>
     #janela {
     position: relative;
-    background-color: #ececec;
+    background-color: #162637;;
     height: 100vh;
     /* width: 500px; */
     }
