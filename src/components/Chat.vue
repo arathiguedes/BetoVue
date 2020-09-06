@@ -40,8 +40,8 @@
     #janela {
     position: relative;
     background-color: #ececec;
-    height: 600px;
-    width: 500px;
+    height: 100vh;
+    /* width: 500px; */
     }
     #card{
     padding: 20px 20px 20px 50px;
