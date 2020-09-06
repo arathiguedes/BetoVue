@@ -12,7 +12,7 @@
             <div id="card">
             <div v-for="card in cardsExibe" :key="card.tema">
                 <div v-if="cards.length == 0">Sem cartas</div>
-                {{card}}
+                <Card :tema="card.tema" :descricao="card.descricao" :status="card.estado"/>
             </div>
             
             </div>
@@ -79,8 +79,12 @@
 </style>
 
 <script>
+    import Card from './Card.vue'
     export default{
         name: 'Chat',
+        components:{
+            Card
+        },
         data() {
             return{
                 TemaField: "",
