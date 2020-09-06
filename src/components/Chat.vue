@@ -20,10 +20,10 @@
             <div id="forms">
 
             <h3 style="color: #ffffff">Cadastre sua Pauta</h3>
-            <input type="text" placeholder="Tema" v-model="TemaField" > 
-            <input type="text" placeholder="Descricao" v-model="DescField">
+            <input type="text" placeholder="Tema" v-model="TemaField" style="color: #ffffff"> 
+            <input type="text" placeholder="Descricao" v-model="DescField" style="color: #ffffff">
             <label for="pauta" style="color: #ffffff"> Estado da pauta:</label>
-            <select id="pauta" name="estado" v-model="estado">
+            <select id="pauta" name="estado" v-model="estado" style="color: #ffffff">
                 <option value="green">discutida</option>
                 <option value="red">discutindo</option>
                 <option value="yellow">Nova a discutir</option>
