@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import Meet from './components/Meet.vue'
 import Chat from './components/Chat.vue'
 
 export default {

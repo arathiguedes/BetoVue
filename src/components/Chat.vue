@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <button id="chat-beto" @click="Chamajanela()">icone</button>
-        <span>{{EstadoJanela}}</span>
-        <div id="janela" v-if="EstadoJanela" >
+        <!-- <button id="chat-beto" @click="Chamajanela()">icone</button> -->
+        <!-- <span>{{EstadoJanela}}</span> -->
+        <div id="janela">
             <div class="bts">
             <button style="background-color: green;" @click="filtraEstado('green')"></button>
             <button style="background-color: red;" @click="filtraEstado('red')"></button>
@@ -23,7 +23,7 @@
             <input type="text" placeholder="Tema" v-model="TemaField" > 
             <input type="text" placeholder="Descricao" v-model="DescField">
             <label for="pauta">Estado da pauta:</label>
-            <select id="pauta "name="estado" v-model="estado">
+            <select id="pauta" name="estado" v-model="estado">
                 <option value="green">discutida</option>
                 <option value="red">discutindo</option>
                 <option value="yellow">Nova a discutir</option>
@@ -148,10 +148,10 @@
               this.DescField = ""
 
             },
-          Chamajanela: function() {
-            if (this.EstadoJanela === false){this.EstadoJanela = true} else {this.EstadoJanela = false}
-            this.cardsExibe = this.cards
-          },
+        //   Chamajanela: function() {
+        //     if (this.EstadoJanela === false){this.EstadoJanela = true} else {this.EstadoJanela = false}
+        //     this.cardsExibe = this.cards
+        //   },
           filtraEstado(cor) {
               console.log("filtraEstado",cor)
               this.cardsExibe = this.cards.filter(card => card.estado === cor)
